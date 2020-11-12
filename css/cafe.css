@@ -1,0 +1,267 @@
+
+
+
+html {
+    scroll-behavior:smooth;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+#section1 {
+  height: 100vh;
+  width: 100vw;
+  background-color:#d1a66d;
+}
+ 
+.pushpin {
+    position: absolute;
+    left:695px;
+    top: 95px;
+}
+
+#opening {
+    width: 80vw;
+    height: 80vh;
+    animation-name: rotater;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    }
+
+.opening {
+    position: absolute;
+    left: 155px;
+    top: 90px;
+}
+
+
+@keyframes rotater{
+    
+    0%{
+        transform: rotateZ(-2deg)
+    }
+    
+    100%{
+        transform: rotateZ(2deg)
+    }
+    
+}
+
+.bench {
+    width: 100vw;
+    height: 95vh;
+    right: 60px;
+    position:absolute;
+    animation-name: rotater;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+
+.shading {
+    width: 100vw;
+    height: 100vh; 
+    position:absolute;
+}
+
+.sunflower {
+    width: 35vw;
+    height: 35vh;
+    top: 990px;
+    left: 100px;
+    position: absolute;
+    
+}
+
+
+.sunflower:hover {
+    transform: rotate(20deg);
+}
+
+#section5 {
+    height: 100vh;
+    width: 100vw;
+    background-color:#add5db;
+}
+
+.hut {
+    width: 590px;
+    height: 700px;
+    position: absolute;
+}
+
+.tree {
+    width: 100vw;
+    height: 100vh;
+    left: 400px;
+    position: absolute;
+}
+
+.plants {
+    width: 100vw;
+    height: 100vh; 
+    position:absolute;
+    animation: nudge 6s linear infinite ;
+    transform-origin: bottom;
+}
+
+@keyframes nudge {
+  0% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(30px, 0);
+  }
+  
+  80% {
+    transform: translate(0px, 0);
+  }
+}
+
+#section3 {
+  height: 100vh;
+  width: 100vw;
+  background-color:#592b11; 
+}
+
+#section4 {
+    height: 100vh;
+  width: 100vw;
+  background-color:#ffeed4; 
+}
+
+.green {
+    width: 40vw;
+    height: 40vh; 
+    margin-top: 50px;
+    left: 80px;
+    position:absolute;
+    animation: pulsate 3s ease infinite;
+}
+
+.navy {
+    width: 20vw;
+    height: 20vh; 
+    margin-top: 50px;
+    left: 550px;
+    position:absolute;
+    animation: pulsate 5s ease infinite;
+}
+
+.red {
+    width: 20vw;
+    height: 20vh; 
+    margin-top: 250px;
+    left: 600px;
+    position:absolute;
+}
+
+.orange {
+    width: 40vw;
+    height: 40vh; 
+    margin-top: 50px;
+    left: 900px;
+    position:absolute;
+    animation: pulsate 2s ease infinite;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.yellow {
+    width: 70vw;
+    height: 70vh; 
+    margin-top: 180px;
+    left: 100px;
+    position:absolute;
+}
+
+.bush {
+    width: 100vw;
+    height: 100vh; 
+    position:absolute;
+}
+
+.poles {
+   width: 80vw;
+    height: 80vh; 
+    top: 1465px;
+    left: 30px;
+    position:absolute; 
+}
+
+.bulb4 {
+    width: 25vw;
+    height: 25vh; 
+    top: 1895px;
+    left: 950px;
+   position:absolute; 
+    animation: fadeIn ease 5s infinite;
+}
+
+.bulb3 {
+    width: 25vw;
+    height: 25vh; 
+    top: 1835px;
+    left: 660px;
+   position:absolute; 
+    animation: fadeIn ease 1s infinite;
+    animation-delay: 2s;
+}
+
+
+.bulb2 {
+    width: 25vw;
+    height: 25vh; 
+    top: 1735px;
+    left: 280px;
+   position:absolute; 
+}
+
+.bulb1 {
+    width: 15vw;
+    height: 25vh; 
+    top: 1795px;
+    left: 0px;
+   position:absolute; 
+   animation: fadeIn ease 3s infinite;
+    animation-delay: 3s;
+}
+
+
+@keyframes fadeIn {
+0% {opacity:.5;}
+50% {opacity:1;}
+100%{opacity:.5;}
+}
+
+.table {
+    right: 0px;
+    top: 1900px;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+}
+
+#section2 {
+  height: 100vh;
+  width: 100vw;
+  background-color:#f7e3d2;
+}
+}
