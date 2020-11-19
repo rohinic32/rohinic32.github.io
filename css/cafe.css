@@ -325,6 +325,7 @@ html {
     width: 40vh;
     top: 3384px;
     left: 800px;
+    transition: translate ease;
 }
 
 .handles:hover {
