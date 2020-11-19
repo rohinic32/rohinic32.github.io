@@ -1,6 +1,5 @@
 
 
-
 html {
     scroll-behavior:smooth;
     width: 100%;
@@ -14,32 +13,57 @@ html {
   height: 100vh;
   width: 100vw;
   background-color:#d1a66d;
+  flex:auto
 }
- 
+
 .pushpin {
     position: absolute;
     left:695px;
     top: 95px;
 }
 
-#opening {
+
+.opening {
     width: 80vw;
     height: 80vh;
     animation-name: rotater;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: ease;
-    }
-
-.opening {
+    animation-timing-function: ease-in-out;
     position: absolute;
-    left: 155px;
+    left: 151px;
     top: 90px;
+    transform-origin:top;
 }
 
 
 @keyframes rotater{
+    
+    0%{
+        transform: rotateZ(-10deg)
+    }
+    
+    100%{
+        transform: rotateZ(10deg)
+    }
+    
+}
+
+.bench {
+    width: 100vw;
+    height: 95vh;
+    right: 40px;
+    position:absolute;
+    animation-name: rotater2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+    transform-origin:top;
+}
+
+@keyframes rotater2{
     
     0%{
         transform: rotateZ(-2deg)
@@ -50,19 +74,6 @@ html {
     }
     
 }
-
-.bench {
-    width: 100vw;
-    height: 95vh;
-    right: 60px;
-    position:absolute;
-    animation-name: rotater;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: ease;
-}
-
 
 .shading {
     width: 100vw;
@@ -108,21 +119,19 @@ html {
     height: 100vh; 
     position:absolute;
     animation: nudge 6s linear infinite ;
+    animation-direction: alternate;
+    animation-timing-function: ease;
     transform-origin: bottom;
 }
 
 @keyframes nudge {
   0% {
-    transform: translate(0, 0);
+    transform: rotateZ(10deg);
   }
   
-  50% {
-    transform: translate(30px, 0);
-  }
-  
-  80% {
-    transform: translate(0px, 0);
-  }
+    100% {
+        transform: rotateZ(-10deg);
+    }
 }
 
 #section3 {
