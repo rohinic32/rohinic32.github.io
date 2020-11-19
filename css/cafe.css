@@ -1,5 +1,4 @@
 
-
 html {
     scroll-behavior:smooth;
     width: 100%;
@@ -9,6 +8,10 @@ html {
     overflow-x: hidden; 
 }
 
+.main {
+  height: 100vh;
+  width: 100vw;  
+}
 #section1 {
   height: 100vh;
   width: 100vw;
@@ -118,7 +121,8 @@ html {
     width: 100vw;
     height: 100vh; 
     position:absolute;
-    animation: nudge 6s linear infinite ;
+    left: 500px;
+    animation: nudge 3s linear infinite ;
     animation-direction: alternate;
     animation-timing-function: ease;
     transform-origin: bottom;
@@ -126,11 +130,11 @@ html {
 
 @keyframes nudge {
   0% {
-    transform: rotateZ(10deg);
+    transform: rotateZ(2deg);
   }
   
     100% {
-        transform: rotateZ(-10deg);
+        transform: rotateZ(-2deg);
     }
 }
 
@@ -150,9 +154,9 @@ html {
     width: 40vw;
     height: 40vh; 
     margin-top: 50px;
-    left: 80px;
+    left: 40px;
     position:absolute;
-    animation: pulsate 3s ease infinite;
+    animation: pulsate 2s ease infinite;
 }
 
 .navy {
@@ -161,8 +165,10 @@ html {
     margin-top: 50px;
     left: 550px;
     position:absolute;
-    animation: pulsate 5s ease infinite;
+    animation: pulsate 4s ease infinite;
 }
+
+
 
 .red {
     width: 20vw;
@@ -172,14 +178,30 @@ html {
     position:absolute;
 }
 
+
+
 .orange {
     width: 40vw;
     height: 40vh; 
     margin-top: 50px;
     left: 900px;
     position:absolute;
-    animation: pulsate 2s ease infinite;
+    animation: spin 7s  infinite;
 }
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 
 @keyframes pulsate {
     0% {
@@ -234,6 +256,10 @@ html {
     animation-delay: 2s;
 }
 
+.bulb3:hover {
+    transform:scale(1.25);
+}
+
 
 .bulb2 {
     width: 25vw;
@@ -249,7 +275,7 @@ html {
     top: 1795px;
     left: 0px;
    position:absolute; 
-   animation: fadeIn ease 3s infinite;
+   animation: fadeIn ease 2.5s infinite;
     animation-delay: 3s;
 }
 
@@ -273,4 +299,48 @@ html {
   width: 100vw;
   background-color:#f7e3d2;
 }
+}
+
+#section6 {
+  height: 100vh;
+  width: 100vw;
+  background-color:#fce8e0;
+}
+
+
+.poolbg {
+    top: 3290px;
+    height:100vh;
+    width:100vw;
+    position: absolute;
+}
+
+.handles {
+    position: absolute;
+    height: 40vh;
+    width: 40vh;
+    top: 3384px;
+    left: 800px;
+}
+
+.handles:hover {
+    transform:translate(300px);
+}
+
+
+.arc {
+    position: absolute;
+    height: 40vh;
+    width: 40vh;
+    top: 3346px;
+    left: 300px;
+}
+
+.pinkpool {
+   position: absolute;
+    height: 40vh;
+    width: 40vh;
+    top: 3226px;
+    left: 300px; 
+    animation: fadeIn ease 2s infinite;
 }
