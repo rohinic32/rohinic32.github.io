@@ -44,11 +44,11 @@ html {
 @keyframes rotater{
     
     0%{
-        transform: rotateZ(-10deg)
+        transform: rotateZ(-8deg)
     }
     
     100%{
-        transform: rotateZ(10deg)
+        transform: rotateZ(8deg)
     }
     
 }
@@ -108,6 +108,10 @@ html {
     width: 590px;
     height: 700px;
     position: absolute;
+}
+
+.hut:hover {
+    transform:translate(-40px);
 }
 
 .tree {
@@ -324,7 +328,8 @@ html {
 }
 
 .handles:hover {
-    transform:translate(300px);
+    transform:translate(100px);
+    
 }
 
 
@@ -344,3 +349,22 @@ html {
     left: 300px; 
     animation: fadeIn ease 2s infinite;
 }
+
+.falling {
+    position:absolute;
+    top: 4200px;
+    left: 850px;
+    width: 30vh;
+    height: 30vh;
+}
+
+.audio {
+    width: 0px;
+    height: 0px;
+}
+
+/*
+.music {
+    width: 0px;
+    height:0px;
+}*/
