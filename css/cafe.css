@@ -96,6 +96,7 @@ html {
 
 .sunflower:hover {
     transform: rotate(20deg);
+    cursor: cell;
 }
 
 #section5 {
@@ -112,6 +113,7 @@ html {
 
 .hut:hover {
     transform:translate(-40px);
+    cursor: cell;
 }
 
 .tree {
@@ -193,6 +195,10 @@ html {
     animation: spin 7s  infinite;
 }
 
+.orange:hover {
+    cursor: cell;
+}
+
 @keyframes spin {
     0%{
         transform: rotate(0deg);
@@ -262,6 +268,7 @@ html {
 
 .bulb3:hover {
     transform:scale(1.25);
+    cursor: cell;
 }
 
 /*
@@ -343,6 +350,7 @@ html {
 
 .handles:hover {
     transform:translate(100px);
+    cursor: cell;
     
 }
 
